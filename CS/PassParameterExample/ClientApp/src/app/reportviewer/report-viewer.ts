@@ -1,4 +1,4 @@
-import { PreviewElements } from "devexpress-reporting/scopes/reporting-viewer"
+import { PreviewElements } from "devexpress-reporting/dx-webdocumentviewer"
 import { Component, Inject, ViewEncapsulation, ViewChild, OnInit  } from '@angular/core';
 import { DxReportViewerComponent } from 'devexpress-reporting-angular';
 
