@@ -8,7 +8,6 @@ import { DxReportViewerComponent } from 'devexpress-reporting-angular';
     encapsulation: ViewEncapsulation.None,
     templateUrl: './report-viewer.html',
     styleUrls: [
-        "../../../node_modules/jquery-ui/themes/base/all.css",
         "../../../node_modules/devextreme/dist/css/dx.common.css",
         "../../../node_modules/devextreme/dist/css/dx.light.css",
         "../../../node_modules/@devexpress/analytics-core/dist/css/dx-analytics.common.css",
@@ -17,7 +16,8 @@ import { DxReportViewerComponent } from 'devexpress-reporting-angular';
     ]
 })
 export class ReportViewerComponent {
-    @ViewChild(DxReportViewerComponent, { static: false }) viewer: DxReportViewerComponent;
+    @ViewChild(DxReportViewerComponent, { static: false })
+    viewer!: DxReportViewerComponent;
     reportUrl: string = "TestReport";
     invokeAction: string = '/DXXRDV';
 
@@ -29,9 +29,9 @@ export class ReportViewerComponent {
 
     // Pass a parameter value each time the report is submitted
     // Note: The value entered on the Parameters panel will be ignored
-    ParametersSubmitted(event) {
+    ParametersSubmitted(event: any) {
         var parameterValue = 12345;
-        event.args.Parameters.filter(function (p) { return p.Key == "parameter4"; })[0].Value = parameterValue;
+        event.args.Parameters.filter(function (p: any) { return p.Key == "parameter4"; })[0].Value = parameterValue;
     }
 
     // Pass a parameter value with a reportUrl
@@ -49,7 +49,7 @@ export class ReportViewerComponent {
     }
 
     // (Optional) Hide the Parameters panel
-    CustomizeElements(event) {
+    CustomizeElements(event: any) {
         var rightPanel = event.args.GetById(PreviewElements.RightPanel);
         var index = event.args.Elements.indexOf(rightPanel);
         event.args.Elements.splice(index, 1);
