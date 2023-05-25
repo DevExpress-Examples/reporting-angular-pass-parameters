@@ -30,17 +30,6 @@
   <ItemGroup>
     <EmbeddedResource Include="PredefinedReports\*.repx" />
   </ItemGroup>
-  <ItemGroup>
-    <None Remove="PredefinedReports\TestReport.repx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Update="PredefinedReports\TestReport.cs">
-      <DependentUpon>TestReport.repx</DependentUpon>
-    </Compile>
-    <Compile Update="PredefinedReports\TestReport.Designer.cs">
-      <DependentUpon>TestReport.repx</DependentUpon>
-    </Compile>
-  </ItemGroup>
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">
