@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassParameterExample", "PassParameterExample\PassParameterExample.csproj", "{711D61CB-3767-4134-A3A0-0E00D04C7B7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassParameterExample", "PassParameterExample\PassParameterExample.csproj", "{D1A94ABA-B4FC-4431-A8C4-ACB4084C3963}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{711D61CB-3767-4134-A3A0-0E00D04C7B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{711D61CB-3767-4134-A3A0-0E00D04C7B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{711D61CB-3767-4134-A3A0-0E00D04C7B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{711D61CB-3767-4134-A3A0-0E00D04C7B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A94ABA-B4FC-4431-A8C4-ACB4084C3963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A94ABA-B4FC-4431-A8C4-ACB4084C3963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A94ABA-B4FC-4431-A8C4-ACB4084C3963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A94ABA-B4FC-4431-A8C4-ACB4084C3963}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DD472DD2-0D29-4F3E-801E-9DC355F10175}
 	EndGlobalSection
 EndGlobal

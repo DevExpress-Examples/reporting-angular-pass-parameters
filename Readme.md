@@ -21,7 +21,7 @@ The sample application includes two buttons to show the methods described above.
 - [report-viewer.html](PassParameterExample/ClientApp/src/app/reportviewer/report-viewer.html)
 - [CustomReportStorageWebExtension.cs](PassParameterExample/Services/CustomReportStorageWebExtension.cs)
 - [ReportsFactory.cs](PassParameterExample/PredefinedReports/ReportsFactory.cs)
-- [Startup.cs](PassParameterExample/Startup.cs)
+- [Program.cs](PassParameterExample/Program.cs)
 
 ## Documentation
 

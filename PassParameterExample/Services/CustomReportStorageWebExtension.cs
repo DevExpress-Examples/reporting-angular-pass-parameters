@@ -8,10 +8,8 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace PassParameterExample.Services
-{
-    public class CustomReportStorageWebExtension : ReportStorageWebExtension
-    {
+namespace PassParameterExample.Services {
+    public class CustomReportStorageWebExtension : ReportStorageWebExtension {
         readonly string ReportDirectory;
         const string FileExtension = ".repx";
         public CustomReportStorageWebExtension(IWebHostEnvironment env) {
@@ -25,8 +23,8 @@ namespace PassParameterExample.Services
             var fileInfo = new FileInfo(Path.Combine(folder, url));
             return fileInfo.Directory.FullName.ToLower().StartsWith(rootDirectory.FullName.ToLower());
         }
-        public override bool CanSetData(string url) {return true;}
-        public override bool IsValidUrl(string url) {return Path.GetFileName(url) == url;}
+        public override bool CanSetData(string url) { return true; }
+        public override bool IsValidUrl(string url) { return Path.GetFileName(url) == url; }
         public override byte[] GetData(string url) {
             try {
                 string[] parts = url.Split("?");
@@ -35,8 +33,7 @@ namespace PassParameterExample.Services
                 XtraReport report = null;
 
                 if (Directory.EnumerateFiles(ReportDirectory).
-                    Select(Path.GetFileNameWithoutExtension).Contains(reportName)) 
-                {
+                    Select(Path.GetFileNameWithoutExtension).Contains(reportName)) {
                     byte[] reportBytes = File.ReadAllBytes(
                         Path.Combine(ReportDirectory, reportName + FileExtension));
                     using (MemoryStream ms = new MemoryStream(reportBytes))
@@ -60,8 +57,7 @@ namespace PassParameterExample.Services
                         return ms.ToArray();
                     }
                 }
-            }
-            catch (Exception ex) {
+            } catch (Exception ex) {
                 throw new DevExpress.XtraReports.Web.ClientControls.FaultException(
                     "Could not get report data.", ex);
             }

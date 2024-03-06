@@ -1,5 +1,5 @@
 import { PreviewElements } from "devexpress-reporting/dx-webdocumentviewer"
-import { Component, Inject, ViewEncapsulation, ViewChild, OnInit  } from '@angular/core';
+import { Component, Inject, ViewEncapsulation, ViewChild, OnInit } from '@angular/core';
 import { DxReportViewerComponent } from 'devexpress-reporting-angular';
 
 
@@ -44,7 +44,7 @@ export class ReportViewerComponent {
     // Note: This approach can be used only for parameters that have the Visible property enabled
     setParameter2() {
         var parameterValue = true;
-        this.viewer.bindingSender.GetParametersModel()["parameter2"](parameterValue);
+        this.viewer.bindingSender.GetParametersModel()["parameter2"] = parameterValue;
         this.viewer.bindingSender.StartBuild();
     }
 
@@ -53,7 +53,7 @@ export class ReportViewerComponent {
         var rightPanel = event.args.GetById(PreviewElements.RightPanel);
         var index = event.args.Elements.indexOf(rightPanel);
         event.args.Elements.splice(index, 1);
-    }    
+    }
 
     constructor(@Inject('BASE_URL') public hostUrl: string) { }
 }
