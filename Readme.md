@@ -36,7 +36,7 @@ The sample application includes two buttons to show the methods described above.
 - [Reporting for ASP.NET Core - Custom Report Parameter Types](https://github.com/DevExpress-Examples/Reporting-Custom-Parameter-Editor-AspNet-Core)
 - [Reporting for ASP.NET MVC - Custom Report Parameter Types](https://github.com/DevExpress-Examples/Reporting-Custom-Parameter-Editor-Mvc)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-angular-pass-parameters&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=reporting-angular-pass-parameters&~~~was_helpful=no)
 
