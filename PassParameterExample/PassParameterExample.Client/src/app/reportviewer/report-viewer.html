@@ -1,0 +1,9 @@
+<div>
+    <button style="margin:5px" (click)="setParameter1()"><span>Set parameter1</span></button>
+    <button style="margin:5px" (click)="setParameter2()"><span>Set parameter2</span></button>
+</div>
+<dx-report-viewer [reportUrl]="reportUrl" height="800px">
+  <dxrv-request-options [invokeAction]="invokeAction" [host]="hostUrl"></dxrv-request-options>
+  <dxrv-callbacks (CustomizeElements)="CustomizeElements($event)" 
+                  (ParametersSubmitted)="ParametersSubmitted($event)"></dxrv-callbacks>
+</dx-report-viewer>

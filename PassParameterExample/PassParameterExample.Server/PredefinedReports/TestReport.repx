@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="20.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="TestReport" PageWidth="850" PageHeight="1100" Version="20.2" RequestParameters="false" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".repx" />
+  </Extensions>
+  <Parameters>
+    <Item1 Ref="4" ValueInfo="10" Name="parameter1" Type="#Ref-3" />
+    <Item2 Ref="6" Description="Parameter2" ValueInfo="False" Name="parameter2" Type="#Ref-5" />
+    <Item3 Ref="8" Description="Parameter3" ValueInfo="Test Report" Name="parameter3" />
+    <Item4 Ref="9" Description="Parameter4" ValueInfo="0" Name="parameter4" Type="#Ref-3" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="10" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="11" ControlType="BottomMarginBand" Name="BottomMargin">
+      <Controls>
+        <Item1 Ref="12" ControlType="XRPageInfo" Name="pageInfo1" PageInfo="DateTime" SizeF="315,23" LocationFloat="5,5" StyleName="PageInfo" />
+        <Item2 Ref="13" ControlType="XRPageInfo" Name="pageInfo2" TextFormatString="Page {0} of {1}" TextAlignment="TopRight" SizeF="315,23" LocationFloat="330,5" StyleName="PageInfo" />
+      </Controls>
+    </Item2>
+    <Item3 Ref="14" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="176.041687">
+      <Controls>
+        <Item1 Ref="15" ControlType="XRTable" Name="table3" KeepTogether="true" SizeF="650,125.000015" LocationFloat="0,51.0416679" Padding="2,2,0,0,96" Borders="All">
+          <Rows>
+            <Item1 Ref="16" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="17" ControlType="XRTableCell" Name="tableCell3" Weight="1" Multiline="true" Text="Parameter Name" Font="Arial, 9.75pt, style=Bold">
+                  <StylePriority Ref="18" UseFont="false" />
+                </Item1>
+                <Item2 Ref="19" ControlType="XRTableCell" Name="tableCell4" Weight="1" Multiline="true" Text="Value" Font="Arial, 9.75pt, style=Bold">
+                  <StylePriority Ref="20" UseFont="false" />
+                </Item2>
+                <Item3 Ref="21" ControlType="XRTableCell" Name="tableCell9" Weight="2.3484320557491287" Multiline="true" Text="Comment" Font="Arial, 9.75pt, style=Bold">
+                  <StylePriority Ref="22" UseFont="false" />
+                </Item3>
+              </Cells>
+            </Item1>
+            <Item2 Ref="23" ControlType="XRTableRow" Name="tableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="24" ControlType="XRTableCell" Name="tableCell5" Weight="1" Multiline="true" Text="parameter1" />
+                <Item2 Ref="25" ControlType="XRTableCell" Name="tableCell6" Weight="1" Multiline="true" Text="tableCell6">
+                  <ExpressionBindings>
+                    <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="?parameter1" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="27" ControlType="XRTableCell" Name="tableCell10" Weight="2.3484320557491287" Multiline="true" Text="Inserted into the &quot;reportUrl&quot; when the button is clicked" />
+              </Cells>
+            </Item2>
+            <Item3 Ref="28" ControlType="XRTableRow" Name="tableRow5" Weight="1">
+              <Cells>
+                <Item1 Ref="29" ControlType="XRTableCell" Name="tableCell7" Weight="1" Multiline="true" Text="parameter2" />
+                <Item2 Ref="30" ControlType="XRTableCell" Name="tableCell8" Weight="1" Multiline="true" Text="tableCell8">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="?parameter2" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="32" ControlType="XRTableCell" Name="tableCell11" Weight="2.3484320557491287" Multiline="true" Text="Initialized in code when the button is clicked" />
+              </Cells>
+            </Item3>
+            <Item4 Ref="33" ControlType="XRTableRow" Name="tableRow6" Weight="1">
+              <Cells>
+                <Item1 Ref="34" ControlType="XRTableCell" Name="tableCell12" Weight="1" Multiline="true" Text="parameter3" />
+                <Item2 Ref="35" ControlType="XRTableCell" Name="tableCell13" Weight="1" Multiline="true" Text="tableCell13">
+                  <ExpressionBindings>
+                    <Item1 Ref="36" EventName="BeforePrint" PropertyName="Text" Expression="?parameter3" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="37" ControlType="XRTableCell" Name="tableCell14" Weight="2.3484320557491287" Multiline="true" Text="Insterted into the &quot;reportUrl&quot; string on startup" />
+              </Cells>
+            </Item4>
+            <Item5 Ref="38" ControlType="XRTableRow" Name="tableRow7" Weight="1">
+              <Cells>
+                <Item1 Ref="39" ControlType="XRTableCell" Name="tableCell15" Weight="1" Multiline="true" Text="parameter4" />
+                <Item2 Ref="40" ControlType="XRTableCell" Name="tableCell16" Weight="1" Multiline="true" Text="tableCell16">
+                  <ExpressionBindings>
+                    <Item1 Ref="41" EventName="BeforePrint" PropertyName="Text" Expression="?parameter4" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="42" ControlType="XRTableCell" Name="tableCell17" Weight="2.3484320557491287" Multiline="true" Text="Passed by using the &quot;ParametersSubmitted&quot; event" />
+              </Cells>
+            </Item5>
+          </Rows>
+          <StylePriority Ref="43" UseBorders="false" />
+        </Item1>
+        <Item2 Ref="44" ControlType="XRLabel" Name="label1" Text="Test Report" SizeF="640,24.194334" LocationFloat="5,5" StyleName="Title">
+          <ExpressionBindings>
+            <Item1 Ref="45" EventName="BeforePrint" PropertyName="Text" Expression="?parameter3" />
+          </ExpressionBindings>
+        </Item2>
+      </Controls>
+    </Item3>
+    <Item4 Ref="46" ControlType="GroupHeaderBand" Name="GroupHeader1" GroupUnion="WithFirstDetail" HeightF="28">
+      <Controls>
+        <Item1 Ref="47" ControlType="XRTable" Name="table1" SizeF="650,28" LocationFloat="0,0">
+          <Rows>
+            <Item1 Ref="48" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="49" ControlType="XRTableCell" Name="tableCell1" Weight="1" Text="Test Value" StyleName="DetailCaption1" Borders="None">
+                  <StylePriority Ref="50" UseBorders="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item4>
+    <Item5 Ref="51" ControlType="DetailBand" Name="Detail" HeightF="25">
+      <Controls>
+        <Item1 Ref="52" ControlType="XRTable" Name="table2" SizeF="650,25" LocationFloat="0,0" OddStyleName="DetailData3_Odd">
+          <Rows>
+            <Item1 Ref="53" ControlType="XRTableRow" Name="tableRow2" Weight="11.5">
+              <Cells>
+                <Item1 Ref="54" ControlType="XRTableCell" Name="tableCell2" Weight="1" StyleName="DetailData1" Borders="None">
+                  <ExpressionBindings>
+                    <Item1 Ref="55" EventName="BeforePrint" PropertyName="Text" Expression="[TestValue]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="56" UseBorders="false" />
+                </Item1>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item1>
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="57" Name="Title" BorderStyle="Inset" Font="Arial, 14.25pt" ForeColor="255,75,75,75" BackColor="Transparent" BorderColor="Black" Sides="None" StringFormat="Near;Near;0;None;Character;Default" BorderWidthSerializable="1" />
+    <Item2 Ref="58" Name="DetailCaption1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="White" BackColor="255,75,75,75" BorderColor="White" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item3 Ref="59" Name="DetailData1" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BorderColor="Transparent" Sides="Left" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="2" />
+    <Item4 Ref="60" Name="DetailData3_Odd" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 8.25pt" ForeColor="Black" BackColor="255,231,231,231" BorderColor="Transparent" Sides="None" StringFormat="Near;Center;0;None;Character;Default" TextAlignment="MiddleLeft" BorderWidthSerializable="1" />
+    <Item5 Ref="61" Name="PageInfo" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 8.25pt, style=Bold" ForeColor="255,75,75,75" StringFormat="Near;Near;0;None;Character;Default" />
+  </StyleSheet>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.ObjectBinding.ObjectDataSource,DevExpress.DataAccess.v20.2" Name="objectDataSource1" Base64="PE9iamVjdERhdGFTb3VyY2UgTmFtZT0ib2JqZWN0RGF0YVNvdXJjZTEiPjxEYXRhTWVtYmVyPkdldERhdGE8L0RhdGFNZW1iZXI+PFBhcmFtZXRlcnM+PFBhcmFtZXRlciBOYW1lPSJpdGVtbnVtYmVyIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5JbnQzMikoP3BhcmFtZXRlcjEpPC9QYXJhbWV0ZXI+PC9QYXJhbWV0ZXJzPjxDb25zdHJ1Y3RvciAvPjwvT2JqZWN0RGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="3" Content="System.Int32" Type="System.Type" />
+    <Item2 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v20.2" Ref="5" Content="System.Boolean" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>
