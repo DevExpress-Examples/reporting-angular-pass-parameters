@@ -35,11 +35,11 @@ Open your browser and navigate to the URL specified in the command output to see
 
 ## Files to Review
 
-- [report-viewer.ts](PassParameterExample.Client/src/app/reportviewer/report-viewer.ts)
-- [report-viewer.html](PassParameterExample.Client/src/app/reportviewer/report-viewer.html)
-- [CustomReportStorageWebExtension.cs](PassParameterExample.Server/Services/CustomReportStorageWebExtension.cs)
-- [ReportsFactory.cs](PassParameterExample.PredefinedReports/ReportsFactory.cs)
-- [Program.cs](PassParameterExample.Server/Program.cs)
+- [report-viewer.ts](PassParameterExample/PassParameterExample.Client/src/app/reportviewer/report-viewer.ts)
+- [report-viewer.html](PassParameterExample/PassParameterExample.Client/src/app/reportviewer/report-viewer.html)
+- [CustomReportStorageWebExtension.cs](PassParameterExample/PassParameterExample.Server/Services/CustomReportStorageWebExtension.cs)
+- [ReportsFactory.cs](PassParameterExample/PassParameterExample.Server/PredefinedReports/ReportsFactory.cs)
+- [Program.cs](PassParameterExample/PassParameterExample.Server/Program.cs)
 
 ## Documentation
 
@@ -59,3 +59,4 @@ Open your browser and navigate to the URL specified in the command output to see
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
